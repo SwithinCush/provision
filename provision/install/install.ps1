@@ -13,3 +13,4 @@ if (TimedPrompt 'Press ANY Key to Abort' 10) {
 
 Copy-Item –Path “C:\provision\Modules\*” –Destination “$env:ProgramFiles\WindowsPowerShell\Modules” –Recurse
 
+Install-Module -Name PSWindowsUpdate
