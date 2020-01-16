@@ -1,4 +1,4 @@
-﻿####################################################
+####################################################
 #
 # This script creates a $profile
 # and sources in modules
@@ -11,5 +11,4 @@ if (TimedPrompt 'Press ANY Key to Abort' 10) {
     exit
 }
 
-Copy-Item –Path “C:\provision\Modules\*” –Destination “$env:ProgramFiles\WindowsPowerShell\Modules” –Recurse
-
+Remove-Item –Path "$env:ProgramFiles\WindowsPowerShell\Modules\DrakePostal\*" -Recursive
